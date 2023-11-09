@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-pip install --upgrade streamlit
 import numpy as np
 
 

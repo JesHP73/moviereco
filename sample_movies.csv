@@ -1,0 +1,51 @@
+movieId,title,genres,userId,rating,timestamp
+34528,Junebug (2005),Comedy|Drama,462,4.0,1123917109
+4369,"Fast and the Furious, The (2001)",Action|Crime|Thriller,448,2.0,1044649616
+1210,Star Wars: Episode VI - Return of the Jedi (1983),Action|Adventure|Sci-Fi,399,5.0,1167220405
+79242,"Kids Are All Right, The (2010)",Comedy|Drama,483,4.0,1311844828
+1198,Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981),Action|Adventure,91,5.0,1112712826
+198,Strange Days (1995),Action|Crime|Drama|Mystery|Sci-Fi|Thriller,372,5.0,874417240
+110,Braveheart (1995),Action|Drama|War,129,4.0,1167375621
+1080,Monty Python's Life of Brian (1979),Comedy,32,3.0,856737165
+356,Forrest Gump (1994),Comedy|Drama|Romance|War,552,4.0,1111473075
+34,Babe (1995),Children|Drama,93,5.0,942767143
+42018,Mrs. Henderson Presents (2005),Comedy|Drama,68,0.5,1304977981
+2986,RoboCop 2 (1990),Action|Crime|Sci-Fi|Thriller,534,4.0,1459787997
+158,Casper (1995),Adventure|Children,132,2.0,1157922952
+3608,Pee-wee's Big Adventure (1985),Adventure|Comedy,64,5.0,1161566444
+5333,Bob le Flambeur (1955),Crime|Drama,387,3.0,1176013745
+54272,"Simpsons Movie, The (2007)",Animation|Comedy,387,3.5,1185691451
+3479,Ladyhawke (1985),Adventure|Fantasy|Romance,202,4.0,974923239
+30803,3-Iron (Bin-jip) (2004),Drama|Romance,606,4.5,1177626896
+71033,"Secret in Their Eyes, The (El secreto de sus ojos) (2009)",Crime|Drama|Mystery|Romance|Thriller,448,4.0,1324744291
+593,"Silence of the Lambs, The (1991)",Crime|Horror|Thriller,45,4.0,951756812
+4310,Pearl Harbor (2001),Action|Drama|Romance|War,105,4.0,1446573442
+837,Matilda (1996),Children|Comedy|Fantasy,20,4.0,1054038259
+1517,Austin Powers: International Man of Mystery (1997),Action|Adventure|Comedy,218,4.0,1111625089
+454,"Firm, The (1993)",Drama|Thriller,347,3.0,847645719
+2724,Runaway Bride (1999),Comedy|Romance,579,4.0,958882219
+80549,Easy A (2010),Comedy|Romance,563,3.5,1441846170
+60684,Watchmen (2009),Action|Drama|Mystery|Sci-Fi|Thriller|IMAX,249,4.0,1346841501
+4447,Legally Blonde (2001),Comedy|Romance,111,3.5,1516140982
+356,Forrest Gump (1994),Comedy|Drama|Romance|War,50,3.0,1514238146
+2407,Cocoon (1985),Comedy|Sci-Fi,596,4.0,1535827169
+5618,Spirited Away (Sen to Chihiro no kamikakushi) (2001),Adventure|Animation|Fantasy,582,3.5,1446794188
+146656,Creed (2015),Drama,561,3.5,1491095479
+7022,Battle Royale (Batoru rowaiaru) (2000),Action|Drama|Horror|Thriller,177,2.5,1435526211
+2193,Willow (1988),Action|Adventure|Fantasy,380,5.0,1493474398
+4979,"Royal Tenenbaums, The (2001)",Comedy|Drama,187,4.5,1161849796
+6754,Underworld (2003),Action|Fantasy|Horror,610,3.0,1493846017
+1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy,562,4.5,1368893997
+150,Apollo 13 (1995),Adventure|Drama|IMAX,588,3.0,839316050
+134130,The Martian (2015),Adventure|Drama|Sci-Fi,125,4.0,1474283297
+7206,Mon Oncle (My Uncle) (1958),Comedy,387,4.0,1117355772
+110655,Rio 2 (2014),Adventure|Animation|Children|Comedy,567,1.5,1525288965
+5349,Spider-Man (2002),Action|Adventure|Sci-Fi|Thriller,160,0.5,1058456918
+39,Clueless (1995),Comedy|Romance,584,1.0,834987810
+140110,The Intern (2015),Comedy,519,4.0,1518479757
+61073,Hell Ride (2008),Action|Drama|Thriller,599,2.0,1519257514
+50872,Ratatouille (2007),Animation|Children|Drama,15,3.0,1510577962
+8972,National Treasure (2004),Action|Adventure|Drama|Mystery|Thriller,62,3.5,1521490406
+2301,History of the World: Part I (1981),Comedy|Musical,469,3.0,965425863
+8528,Dodgeball: A True Underdog Story (2004),Comedy,222,4.0,1391352874
+4874,K-PAX (2001),Drama|Fantasy|Mystery|Sci-Fi,105,5.0,1446749868

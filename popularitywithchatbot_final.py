@@ -26,29 +26,36 @@ def popularity_recommender(df, num_recommendations):
     recommended_movies = sorted_movies.head(num_recommendations)
     return recommended_movies
 
+# Define the genres
+genres = ['Comedy', 'Drama', 'Thriller']
+
 def run_streamlit_app():
     # Load the movie data from the GitHub URL
     df = pd.read_csv(csv_url)
 
-    # Define the genres
-    genres = {'1': 'Comedy', '2': 'Drama', '3': 'Thriller'}
-
     # Streamlit app
-    st.title("Movie Recommender System")
+    st.title("Personal movie Recommender")
+    st.write("Hi! I'm your personal recommender.")
 
-    # Get the genre choice from the user
-    genre_choice = st.selectbox("Choose a genre:", options=['Comedy', 'Drama', 'Thriller'])
+    genre = st.radio("Choose your genre:", genres)
 
-    # If a genre is selected, show recommendations
-    if genre_choice:
-        # Get 10 movie recommendations
-        recommended_movies = popularity_recommender(df, 10)
-        # Filter recommendations by the selected genre
-        recommendations_filtered = recommended_movies[recommended_movies["genres"].str.contains(genre_choice)]
-        st.write(f"Top recommendations for {genre_choice}:")
-        # Display the recommended movies
-        for _, row in recommendations_filtered.iterrows():
-            st.write(f"{row['title']} - Popularity Score: {row['popularity_score']}")
+    if genre:
+        st.write(f"You have chosen {genre}")
+        recommended_movies = popularity_recommender(df, 15)
+        if genre == 'Comedy':
+            a = recommended_movies[recommended_movies["genres"].str.contains("Comedy")]
+        elif genre == 'Drama':
+            a = recommended_movies[recommended_movies["genres"].str.contains("Drama")]
+        elif genre == 'Thriller':
+            a = recommended_movies[recommended_movies["genres"].str.contains("Thriller")]
+        else:
+            st.write("Invalid genre selection")
+
+        if not a.empty:
+            st.write("Recommended movies:")
+            st.table(a[['title', 'popularity_score']].reset_index(drop=True))
+        else:
+            st.write("No recommendations found for this genre.")
 
 if __name__ == "__main__":
     run_streamlit_app()

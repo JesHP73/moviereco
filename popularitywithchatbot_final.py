@@ -17,15 +17,18 @@ def calculate_popularity(df):
     
     return popularity_score.to_dict()
 
+
+@st.cache_data
 def popularity_recommender(df, num_recommendations):
     
     df['popularity_score'] = df['movieId'].map(calculate_popularity(df))
     
-    sorted_movies = df.sort_values(by='popularity_score', ascending=False)
+    sorted_movies = df.sort_values(by='popularity_score', ascending=False) #the rating 
     
     recommended_movies = sorted_movies.drop_duplicates(subset='title').head(num_recommendations)
 
     return recommended_movies[['movieId', 'title', 'genres']]
+
 
 def run_streamlit_app():
     

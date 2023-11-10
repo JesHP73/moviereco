@@ -57,8 +57,8 @@ def run_streamlit_app():
         if continue_chat == "No":
             st.write("Thanks for using the recommender! Have a great day! 👋")
             st.stop()
-    else:
-        st.write("Invalid genre selection. Please type 1, 2, or 3. 🔄")
+        else:
+            st.write("Invalid genre selection. Please type 1, 2, or 3. 🔄")
 
 if __name__ == "__main__":
     run_streamlit_app()

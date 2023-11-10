@@ -43,7 +43,7 @@ def run_streamlit_app():
     if genre_choice in genre_map:
         selected_genre = genre_map[genre_choice]
         st.write(f"You have chosen {selected_genre}")
-        top_movies = popularity_recommender(df, 10)
+        top_movies = popularity_recommender(df, 15)
 
         a = top_movies[top_movies["genres"].str.contains(selected_genre)] 
 

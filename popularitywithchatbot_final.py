@@ -20,7 +20,7 @@ def calculate_popularity(df):
     return popularity_score.to_dict()
 
 
-@st.cache_data
+
 def popularity_recommender(df, num_recommendations):
     
     df['popularity_score'] = df['movieId'].map(calculate_popularity(df))
@@ -65,6 +65,14 @@ def run_streamlit_app():
             st.stop()
         else:
             st.write("Please type 1, 2, or 3 again. ⭐️")
+            if genre_choice in genre_map:
+                selected_genre = genre_map[genre_choice]
+                st.write(f"You have chosen {selected_genre}")
+                top_movies_2 = popularity_recommender(df, 15)
 
 if __name__ == "__main__":
     run_streamlit_app()
+
+
+
+

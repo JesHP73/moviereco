@@ -7,31 +7,6 @@ import numpy as np
 
 csv_url = "https://raw.githubusercontent.com/JesHP73/moviereco/85845a1166f211909985e551c8ab860ce58727b5/sample_movies.csv"
 
-
-
-def calculate_popularity(df):
-    
-    ratings_count = df.groupby('movieId')['rating'].count()
-    
-    average_ratings = df.groupby('movieId')['rating'].mean()
-    
-    popularity_score = average_ratings * np.log1p(ratings_count)
-    
-    return popularity_score.to_dict()
-
-
-
-def popularity_recommender(df, num_recommendations):
-    
-    df['popularity_score'] = df['movieId'].map(calculate_popularity(df))
-    
-    sorted_movies = df.sort_values(by='popularity_score', ascending=False) #the rating 
-    
-    recommended_movies = sorted_movies.drop_duplicates(subset='title').head(num_recommendations)
-
-    return recommended_movies[['movieId', 'title', 'genres']]
-
-
 def run_streamlit_app():
     
     df = pd.read_csv(csv_url) #df ok
@@ -72,6 +47,31 @@ def run_streamlit_app():
 
 if __name__ == "__main__":
     run_streamlit_app()
+
+
+def calculate_popularity(df):
+    
+    ratings_count = df.groupby('movieId')['rating'].count()
+    
+    average_ratings = df.groupby('movieId')['rating'].mean()
+    
+    popularity_score = average_ratings * np.log1p(ratings_count)
+    
+    return popularity_score.to_dict()
+
+
+
+def popularity_recommender(df, num_recommendations):
+    
+    df['popularity_score'] = df['movieId'].map(calculate_popularity(df))
+    
+    sorted_movies = df.sort_values(by='popularity_score', ascending=False) #the rating 
+    
+    recommended_movies = sorted_movies.drop_duplicates(subset='title').head(num_recommendations)
+
+    return recommended_movies[['movieId', 'title', 'genres']]
+
+
 
 
 

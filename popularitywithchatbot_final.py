@@ -59,7 +59,7 @@ def run_streamlit_app():
             st.write("Thanks for using the recommender! Have a great day! 👋")
             st.stop()
         else:
-            st.write("Invalid genre selection. Please type 1, 2, or 3. 🔄")
+            st.write("Please type 1, 2, or 3 again. ⭐️")
 
 if __name__ == "__main__":
     run_streamlit_app()

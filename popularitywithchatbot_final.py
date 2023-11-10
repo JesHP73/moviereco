@@ -23,7 +23,8 @@ def popularity_recommender(df, num_recommendations):
     
     sorted_movies = df.sort_values(by='popularity_score', ascending=False)
     
-    recommended_movies = sorted_movies.head(num_recommendations)
+    recommended_movies = sorted_movies.drop_duplicates(subset='title').head(num_recommendations)
+
     return recommended_movies[['movieId', 'title', 'genres']]
 
 def run_streamlit_app():
